@@ -14,11 +14,9 @@ def get_first_name_of_season_winner(data, season)
 
   end
   
-  MM NOTE --- I HAVE UNDERSTOOD HOW TO USE JSON, BUT NOW NEED TO SIMNPLY RETURN THE FIRST WORD.
-  return_winner = winner.strip
-  
-  puts return_winner
+  return_winner = winner.strip(' ')
   return_winner
+
 end
 
 
