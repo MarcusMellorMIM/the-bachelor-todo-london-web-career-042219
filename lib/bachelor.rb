@@ -76,7 +76,7 @@ end
 def get_average_age_for_season(data, season)
   # code here
 sum_age=0.0
-return_age=0.0
+return_age=0
 counter=0
 
   data[season].each do
