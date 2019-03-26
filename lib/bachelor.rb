@@ -2,7 +2,6 @@ def get_first_name_of_season_winner(data, season)
   # code here
   current_name=""
   winner=""
-  return_winner=[]
   counter=0
 
   data[season].each do | contestant, contestant_data |
