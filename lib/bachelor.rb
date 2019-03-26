@@ -85,7 +85,7 @@ counter=0
   end
 
   if counter>0  
-    return_age=(sum_age / counter).to_i
+    return_age=(sum_age / counter).round
   end
 
 end
