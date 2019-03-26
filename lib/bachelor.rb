@@ -80,7 +80,7 @@ return_age=0.0
 counter=0
 
   data[season].each do
-    sum_age+= data[season][counter][age].to_f
+    sum_age+= data[season][counter]["age"].to_f
     counter+=1
   end
 
