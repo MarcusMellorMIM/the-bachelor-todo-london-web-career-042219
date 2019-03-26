@@ -13,7 +13,7 @@ def get_first_name_of_season_winner(data, season)
 
   end
   
-  return_winner = winner.strip(' ')
+  return_winner = winner.split(' ')
   return_winner
 
 end
