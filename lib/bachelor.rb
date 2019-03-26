@@ -57,6 +57,20 @@ end
 
 def get_occupation(data, hometown)
   # code here
+  current_occupation=""
+
+  data.each do | season, season_data |
+    counter=0
+    season_data.each do
+      if data[season][counter]["hometown"]==hometown && current_occupation==""
+        current_occupation=data[season][counter]["occupation"]
+      end        
+      counter+=1
+    end 
+  end
+  
+  current_occupation
+
 end
 
 def get_average_age_for_season(data, season)
