@@ -39,6 +39,20 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
+  count_hometown=0
+
+  data.each do | season, season_data |
+    counter=0
+    season_data.each do
+      if data[season][counter]["hometown"]==hometown
+        count_hometown+=1
+      end        
+      counter+=1
+    end 
+  end
+  
+  count_hometown
+
 end
 
 def get_occupation(data, hometown)
