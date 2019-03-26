@@ -21,6 +21,20 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+  current_name=""
+
+  data.each do | season, season_data |
+    counter=0
+    season_data.each do
+      if data[season][counter]["occupation"]==occupation
+        current_name = data[season][counter]["name"]
+      end        
+      counter+=1
+    end 
+  end
+  
+  current_name
+
 end
 
 def count_contestants_by_hometown(data, hometown)
